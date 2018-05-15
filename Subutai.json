@@ -6,14 +6,14 @@
   "containers": [
     {
       "hostname": "db",
-      "template": "debian-scratch",
+      "template": "debian-stretch",
       "peer-criteria": "gr1",
       "size": "${dbtype}",
       "peer-layout": "d1"
     },
     {
       "hostname": "web",
-      "template": "debian-scratch",
+      "template": "debian-stretch",
       "peer-criteria": "gr1",
       "size": "${webtype}",
       "peer-layout": "d1"
