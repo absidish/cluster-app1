@@ -6,7 +6,7 @@
   "containers": [
     {
       "hostname": "db",
-      "template": "mysql@280dcda67a67d071970ff838d0331c33c0c04710",
+      "template": "debian-scratch",
       "peer-criteria": "gr1",
       "size": "${dbtype}",
       "peer-layout": "d1"
