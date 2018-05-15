@@ -39,14 +39,12 @@
     "groups": [
       {
         "name": "monitoring_servers",
-        "python-interpreter": "/usr/bin/python3",
         "hostnames": [
           "db"
         ]
       },
       {
         "name": "web_servers",
-        "python-interpreter": "/usr/bin/python3",
         "hostnames": [
           "web"
         ]
