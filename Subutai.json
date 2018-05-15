@@ -22,7 +22,7 @@
   "peer-layouts": [
     {
       "name": "d1",
-      "peer-count": "${peerCount}",
+      "peer-count": "3",
       "container-per-peer": "1"
     }
   ],
