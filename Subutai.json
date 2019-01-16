@@ -16,6 +16,12 @@
           "domain": "${domain}",
           "internal-port": "80",
           "external-port": "80"
+        },
+        {
+          "protocol": "http",
+          "domain": "${domain}",
+          "internal-port": "8080",
+          "external-port": "8080"
         }
       ]
     },
