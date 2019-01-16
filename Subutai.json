@@ -55,7 +55,7 @@
     "environmentName": {
       "description": "Enter the environment name",
       "type": "string",
-      "default": "wp",
+      "default": "cluster",
       "validation": "[a-zA-Z0-9]+"
     }
   }
