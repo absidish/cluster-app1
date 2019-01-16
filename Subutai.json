@@ -8,14 +8,14 @@
       "hostname": "db",
       "template": "debian-stretch",
       "peer-criteria": "gr1",
-      "size": "${dbtype}",
+      "size": "TINY",
       "peer-layout": "d1"
     },
     {
       "hostname": "web",
       "template": "debian-stretch",
       "peer-criteria": "gr1",
-      "size": "${webtype}",
+      "size": "TINY",
       "peer-layout": "d1"
     }
   ],
@@ -57,24 +57,6 @@
       "type": "string",
       "default": "wp",
       "validation": "[a-zA-Z0-9]+"
-    },
-    "peerCount": {
-      "description": "peer count",
-      "type": "int",
-      "default": "3",
-      "validation": "\\d+"
-    },
-    "dbtype": {
-      "description": "You can set TINY,SMALL,MEDIUM,LARGE,HUGE",
-      "type": "enum",
-      "default": "SMALL",
-      "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
-    },
-    "webtype": {
-      "description": "You can set TINY,SMALL,MEDIUM,LARGE,HUGE",
-      "type": "enum",
-      "default": "SMALL",
-      "validation": "TINY,SMALL,MEDIUM,LARGE,HUGE"
     }
   }
 }
