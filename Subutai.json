@@ -10,6 +10,12 @@
       "peer-criteria": "gr1",
       "size": "TINY",
       "peer-layout": "d1"
+              {
+          "protocol": "http",
+          "domain": "${domain}",
+          "internal-port": "80",
+          "external-port": "80"
+        },
     },
     {
       "hostname": "web",
@@ -57,6 +63,12 @@
       "type": "string",
       "default": "cluster",
       "validation": "[a-zA-Z0-9]+"
-    }
+    },
+    "domain": {
+            "description": "Enter the application domain name",
+            "type": "domain",
+            "default": "change.the.domain",
+            "validation": "[a-zA-Z0-9]+"
+        },
   }
 }
