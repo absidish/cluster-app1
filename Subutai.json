@@ -10,13 +10,14 @@
       "peer-criteria": "gr1",
       "size": "TINY",
       "peer-layout": "d1",
-      "port-mapping": {
-        "protocol": "http",
-        "domain": "${domain}",
-        "internal-port": "80",
-        "external-port": "80"
-      },
-      
+      "port-mapping": [
+        {
+          "protocol": "http",
+          "domain": "${domain}",
+          "internal-port": "80",
+          "external-port": "80"
+        }
+      ]
     },
     {
       "hostname": "web",
