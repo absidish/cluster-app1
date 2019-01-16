@@ -9,13 +9,14 @@
       "template": "debian-stretch",
       "peer-criteria": "gr1",
       "size": "TINY",
-      "peer-layout": "d1"
-              {
-          "protocol": "http",
-          "domain": "${domain}",
-          "internal-port": "80",
-          "external-port": "80"
-        },
+      "peer-layout": "d1",
+      "port-mapping": {
+        "protocol": "http",
+        "domain": "${domain}",
+        "internal-port": "80",
+        "external-port": "80"
+      },
+      
     },
     {
       "hostname": "web",
@@ -41,6 +42,7 @@
     "source-url": "https://github.com/absidish/cluster-app1/archive/master.zip",
     "ansible-playbook": "main.yml",
     "extra-vars": [
+      
     ],
     "groups": [
       {
@@ -65,10 +67,10 @@
       "validation": "[a-zA-Z0-9]+"
     },
     "domain": {
-            "description": "Enter the application domain name",
-            "type": "domain",
-            "default": "change.the.domain",
-            "validation": "[a-zA-Z0-9]+"
-        },
+      "description": "Enter the application domain name",
+      "type": "domain",
+      "default": "change.the.domain",
+      "validation": "[a-zA-Z0-9]+"
+    }
   }
 }
